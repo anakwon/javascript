@@ -185,6 +185,7 @@ var underAge = 16;
 // yearsUntilRetirement(1944, 'Tom');
 // yearsUntilRetirement(1980, 'Jane');
 
+//==================================================================// 
 
 // FUNCTION DECLARATION
 // function whatDoYouDo (job, firstname);
@@ -211,31 +212,66 @@ var underAge = 16;
 
 // ARRAYS
 
-var names = ['John', 'Mark', 'Jane'];
-var years = new Array (1989, 1974, 1980);
+// var names = ['John', 'Mark', 'Jane'];
+// var years = new Array (1989, 1974, 1980);
 
-console.log(names, years[0]);
-console.log(names.length);
+// console.log(names, years[0]);
+// console.log(names.length);
 
-names[1] = 'Ana';
-names[names.length] = 'Mary;'
-console.log(names);
-
-
-var ana = ['Ana', 'Kwon', 1989, 'teacher', true];
-ana.push('burgundy');
-
-console.log(ana.indexOf('designer'));
+// names[1] = 'Ana';
+// names[names.length] = 'Mary;'
+// console.log(names);
 
 
-if (ana.indexOf('teacher') === -1)  {
-	console.log('She is NOT a teacher')
-} else {
-	console.log('She is a teacher')
-};
-console.log(ana);
+// var ana = ['Ana', 'Kwon', 1989, 'teacher', true];
+// ana.push('burgundy');
+
+// console.log(ana.indexOf('designer'));
 
 
+// if (ana.indexOf('teacher') === -1)  {
+// 	console.log('She is NOT a teacher')
+// } else {
+// 	console.log('She is a teacher')
+// };
+// console.log(ana);
+
+
+//CHALLENGE TIP CALCULATOR
+
+var meals = ['124', '48', '268'];
+
+var firstMeal = '124';
+var secondMeal = '47';
+var thirdMeal = '268';
+
+
+function tipCalculator (bill) {
+	var percentage;
+
+	if (bill < 50) {
+		percentage = 0.2;
+	} else if (bill >= 50 && bill < 200) {
+		percentage = 0.15;
+	} else {
+		percentage = 0.1;
+	}
+
+	return percentage * bill;
+}
+
+console.log(tipCalculator(48));
+
+var bills = [124, 48, 268];
+var tips = [tipCalculator(bills[0]),
+			tipCalculator(bills[1]),
+			tipCalculator(bills[2])];
+
+var total = [bills[0] + tips[0],
+			 bills[1] + tips[1],
+			 bills[2] + tips[2]];
+
+console.log(total);
 
 
 
