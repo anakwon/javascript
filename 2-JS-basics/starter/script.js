@@ -237,21 +237,52 @@ var underAge = 16;
 // console.log(ana);
 
 
+//******************************************//
 //CHALLENGE TIP CALCULATOR
 
-var meals = ['124', '48', '268'];
+// var meals = ['124', '48', '268'];
 
-var firstMeal = '124';
-var secondMeal = '47';
-var thirdMeal = '268';
+// var firstMeal = '124';
+// var secondMeal = '47';
+// var thirdMeal = '268';
 
 
-function tipCalculator (bill) {
+// function tipCalculator (bill) {
+// 	var percentage;
+
+// 	if (bill < 50) {
+// 		percentage = 0.2;
+// 	} else if (bill >= 50 && bill < 200) {
+// 		percentage = 0.15;
+// 	} else {
+// 		percentage = 0.1;
+// 	}
+
+// 	return percentage * bill;
+// }
+
+// console.log(tipCalculator(48));
+
+// var bills = [124, 48, 268];
+// var tips = [tipCalculator(bills[0]),
+// 			tipCalculator(bills[1]),
+// 			tipCalculator(bills[2])];
+
+// var total = [bills[0] + tips[0],
+// 			 bills[1] + tips[1],
+// 			 bills[2] + tips[2]];
+
+// console.log(total);
+
+//******************************************//
+
+
+function tipCalculator(bill){
 	var percentage;
 
-	if (bill < 50) {
+	if (bill > 50){
 		percentage = 0.2;
-	} else if (bill >= 50 && bill < 200) {
+	} else if (bill <= 50 && bill > 200) {
 		percentage = 0.15;
 	} else {
 		percentage = 0.1;
@@ -260,20 +291,12 @@ function tipCalculator (bill) {
 	return percentage * bill;
 }
 
-console.log(tipCalculator(48));
+console.log(tipCalculator(100));
 
-var bills = [124, 48, 268];
+var bills = [124, 48, 150];
 var tips = [tipCalculator(bills[0]),
 			tipCalculator(bills[1]),
 			tipCalculator(bills[2])];
-
-var total = [bills[0] + tips[0],
-			 bills[1] + tips[1],
-			 bills[2] + tips[2]];
-
-console.log(total);
-
-
 
 
 
